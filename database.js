@@ -19,15 +19,3 @@ export async function createFaqs(question, reponse, ouvert) {
     [question, reponse, ouvert])
     return res.insertId
 }
-
-
-
-
-// pool.query(`select * from faqs`, (err, res) => {
-//     if (err) {
-//         return console.log(err);
-//     }
-//     return console.log(res);
-// })
-
-//module.exports = pool;
