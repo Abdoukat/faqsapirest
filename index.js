@@ -30,22 +30,3 @@ app.use((err, req, res, next) => {
     console.error(err.stack)
     res.status(500).send('Something broke!')
 })
-
-// app.get('/faqs/:id', (req, res) => {
-//     const {id} = req.params;
-//     const findFaq = faqs.find((faq) => faqs.id == id);
-//     res.send(findFaq);
-// });
-
-// app.post('/tshirt/:id', (req, res) => {
-//     const { id } = req.params;
-//     const { marque } = req.body;
-
-//     if(!marque){
-//         res.status(418).send({message: 'Il manque le nom de la marque!'})
-//     }
-
-//     res.send({
-//         tshirt: `POLO avec votre ${marque} et ID ${id}`,
-//     });
-// });
