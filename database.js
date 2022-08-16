@@ -1,4 +1,4 @@
-// const {createPool} = require('mysql');
+const {createPool} = require('mysql');
 import mysql from "mysql2";
 
 const pool = mysql.createPool({
